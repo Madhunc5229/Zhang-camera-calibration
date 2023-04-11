@@ -144,4 +144,4 @@ def geometricError(m_i, M_i, K, RT, kC):
         e_ = np.linalg.norm(m - m_, ord=2) # compute L2 norm
         error.append(e_)
          
-    return np.sum(error) # sum the errors as given in the paper
+    return np.mean(error) # sum the errors as given in the paper
