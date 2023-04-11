@@ -126,7 +126,6 @@ def loss(params, M_pts, m_pts, Extrinsics):
         # estimate error for all points in given image
         e = geometricError(m_pts[i], M_pts[i], K, RT, kC)
         error = np.hstack((error,e))
-    print(len(error))
     return error
 
 def geometricError(m_i, M_i, K, RT, kC):
